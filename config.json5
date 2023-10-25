@@ -74,7 +74,7 @@
     // A commma delimited list of CUDA devices to use for parallel processing. If None, disable parallel processing.
     "vad_parallel_devices": "",
     // The number of CPU cores to use for VAD pre-processing.
-    "vad_cpu_cores": 6,
+    "vad_cpu_cores": 8,
     // The number of seconds before inactivate processes are terminated. Use 0 to close processes immediately, or None for no timeout.
     "vad_process_timeout": 1800,
     // True to use all available GPUs and CPU cores for processing. Use vad_cpu_cores/vad_parallel_devices to specify the number of CPU cores/GPUs to use.

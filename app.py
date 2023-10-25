@@ -39,7 +39,7 @@ from src.description import get_description
 MAX_FILE_PREFIX_LENGTH = 17
 
 # Limit auto_parallel to a certain number of CPUs (specify vad_cpu_cores to get a higher number)
-MAX_AUTO_CPU_CORES = 6
+MAX_AUTO_CPU_CORES = 8
 
 WHISPER_MODELS = ["tiny", "base", "small", "medium", "large",  "large-v2"]
 
