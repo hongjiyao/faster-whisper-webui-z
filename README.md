@@ -1,6 +1,6 @@
 
 
-这是一个[aadnk/whisper-webui](https://github.com/ycyy/faster-whisper-webui)的副本，我根据这个进行了修改以供个人使用。
+这是一个[ycyy/faster-whisper-webui](https://github.com/ycyy/faster-whisper-webui)的项目，我根据这个进行了修改以供个人使用。
 
 # 在本地运行
 
