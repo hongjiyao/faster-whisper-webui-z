@@ -35,26 +35,23 @@ pip install -r requirements.txt
 ```
 python app.py --input_audio_max_duration -1 --server_name 127.0.0.1 --auto_parallel True
 ```
-
     
-你也可以运行CLI界面，它类似于Whisper自己的CLI，但还支持以下附加参数：
-```
-python cli.py \
-[--vad {none,silero-vad,silero-vad-skip-gaps,silero-vad-expand-into-gaps,periodic-vad}] \
-[--vad_merge_window VAD_MERGE_WINDOW] \
-[--vad_max_merge_size VAD_MAX_MERGE_SIZE] \
-[--vad_padding VAD_PADDING] \
-[--vad_prompt_window VAD_PROMPT_WINDOW]
-[--vad_cpu_cores NUMBER_OF_CORES]
-[--vad_parallel_devices COMMA_DELIMITED_DEVICES]
-[--auto_parallel BOOLEAN]
-```
-此外，除了文件路径外，你还可以使用URL作为输入。
-```
-python cli.py --model large --vad silero-vad --language Japanese "https://www.youtube.com/watch?v=4cICErqqRSM"
-```
-
-而不是向app.py或cli.py提供参数，你还可以使用配置文件config.json5。有关更多信息，请参阅该文件。
+--input_audio_max_duration：音频文件的最大长度（以秒为单位），或者设置为-1表示无限制。
+--share：是否在HuggingFace上分享应用程序。
+--server_name：要绑定到的主机或IP。如果为None，则绑定到本地主机。
+--server_port：要绑定到的端口。
+--queue_concurrency_count：要处理的并发请求的数量。
+--default_model_name：默认模型名称。
+--default_vad：默认的语音活动检测（VAD）算法。
+--vad_initial_prompt_mode：是否在每个VAD段前添加初始提示（prepend_all_segments表示在所有段前添加，prepend_first_segment表示仅在前一段前添加）。
+--vad_parallel_devices：用于并行处理的CUDA设备列表。如果为None，则禁用并行处理。
+--vad_cpu_cores：用于VAD预处理的CPU核心数。
+--vad_process_timeout：进程终止前的秒数。设置为0表示立即关闭进程，设置为None表示无超时。
+--auto_parallel：是否使用所有可用的GPU和CPU核心进行处理。使用vad_cpu_cores/vad_parallel_devices指定要使用的CPU核心数/GPU数。
+--output_dir：保存输出的目录。
+--whisper_implementation：要使用的Whisper实现（"whisper"或"faster-whisper"）。
+--compute_type：用于推理的计算类型（"default"、"auto"、"int8"、"int8_float16"、"int16"、"float16"、"float32"）。
+你还可以使用配置文件config.json5。有关更多信息，请参阅该文件。
 如果你想使用不同的配置文件，你可以使用WHISPER_WEBUI_CONFIG环境变量指定另一个文件的路径
 
 ## Google Colab
