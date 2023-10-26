@@ -50,7 +50,7 @@
     // Maximum audio file length in seconds, or -1 for no limit. Ignored by CLI.
     "input_audio_max_duration": -1,
     // True to share the app on HuggingFace.
-    "share": true,
+    "share": false,
     // The host or IP to bind to. If None, bind to localhost.
     "server_name": null,
     // The port to bind to.
