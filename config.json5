@@ -3,28 +3,28 @@
         // Configuration for the built-in models. You can remove any of these 
         // if you don't want to use the default models.
         {
-            "name": "tiny",
-            "url": "tiny" 
+            "name": "faster-whisper-tiny",
+            "url": "faster-whisper-tiny"
         },
         {
-            "name": "base",
-            "url": "base"
+            "name": "faster-whisper-base",
+            "url": "faster-whisper-base"
         },
         {
-            "name": "small",
-            "url": "small"
+            "name": "faster-whisper-small",
+            "url": "faster-whisper-small"
         },
         {
-            "name": "medium",
-            "url": "medium"
+            "name": "faster-whisper-medium",
+            "url": "faster-whisper-medium"
         },
         {
-            "name": "large",
-            "url": "large"
+            "name": "faster-whisper-large-v1",
+            "url": "faster-whisper-large-v1"
         },
         {
-            "name": "large-v2",
-            "url": "large-v2"
+            "name": "faster-whisper-large-v2",
+            "url": "faster-whisper-large-v2"
         },
         // Uncomment to add custom Japanese models
      //  {
@@ -50,7 +50,7 @@
     // Maximum audio file length in seconds, or -1 for no limit. Ignored by CLI.
     "input_audio_max_duration": -1,
     // True to share the app on HuggingFace.
-    "share": true,
+    "share": false,
     // The host or IP to bind to. If None, bind to localhost.
     "server_name": null,
     // The port to bind to.
