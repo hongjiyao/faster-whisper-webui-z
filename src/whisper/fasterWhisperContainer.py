@@ -14,7 +14,7 @@ FASTER_WHISPER_MODELS_PATH={
     "base": "models\faster-whisper\faster-whisper-base",
     "small": "models\faster-whisper\faster-whisper-small",
     "medium": "models\faster-whisper\faster-whisper-medium",
-    "large": "models\faster-whisper\faster-whisper-large",
+    "large": "models\faster-whisper\faster-whisper-large-v1",
     "large-v2": "models\faster-whisper\faster-whisper-large-v2",
 }
 class FasterWhisperContainer(AbstractWhisperContainer):

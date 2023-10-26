@@ -31,11 +31,12 @@ pip install -r requirements.txt
 
 [silero-vad](https://github.com/snakers4/silero-vad)
 
-使用并行CPU/GPU启用运行完整版本（无音频长度限制）的应用程序：:
+使用并行CPU/GPU启用运行完整版本（无音频长度限制）的应用程序：
 ```
 python app.py --input_audio_max_duration -1 --server_name 127.0.0.1 --auto_parallel True
 ```
-    
+
+```   
 --input_audio_max_duration：音频文件的最大长度（以秒为单位），或者设置为-1表示无限制。
 --share：是否在HuggingFace上分享应用程序。
 --server_name：要绑定到的主机或IP。如果为None，则绑定到本地主机。
@@ -51,6 +52,7 @@ python app.py --input_audio_max_duration -1 --server_name 127.0.0.1 --auto_paral
 --output_dir：保存输出的目录。
 --whisper_implementation：要使用的Whisper实现（"whisper"或"faster-whisper"）。
 --compute_type：用于推理的计算类型（"default"、"auto"、"int8"、"int8_float16"、"int16"、"float16"、"float32"）。
+```
 你还可以使用配置文件config.json5。有关更多信息，请参阅该文件。
 如果你想使用不同的配置文件，你可以使用WHISPER_WEBUI_CONFIG环境变量指定另一个文件的路径
 
