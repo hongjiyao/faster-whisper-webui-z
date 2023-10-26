@@ -3,28 +3,28 @@
         // Configuration for the built-in models. You can remove any of these 
         // if you don't want to use the default models.
         {
-            "name": "faster-whisper-tiny",
-            "url": "faster-whisper-tiny"
+            "name": "tiny",
+            "url": "tiny"
         },
         {
-            "name": "faster-whisper-base",
-            "url": "faster-whisper-base"
+            "name": "base",
+            "url": "base"
         },
         {
-            "name": "faster-whisper-small",
-            "url": "faster-whisper-small"
+            "name": "small",
+            "url": "small"
         },
         {
-            "name": "faster-whisper-medium",
-            "url": "faster-whisper-medium"
+            "name": "medium",
+            "url": "medium"
         },
         {
-            "name": "faster-whisper-large-v1",
-            "url": "faster-whisper-large-v1"
+            "name": "large",
+            "url": "large"
         },
         {
-            "name": "faster-whisper-large-v2",
-            "url": "faster-whisper-large-v2"
+            "name": "large-v2",
+            "url": "large-v2"
         },
         // Uncomment to add custom Japanese models
      //  {
